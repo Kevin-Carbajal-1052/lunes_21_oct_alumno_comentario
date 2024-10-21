@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/estilos.css">
+    <title>comentario</title>
+</head>
+<body>
+    <h1>Un alumno y sus mensas(comentarios)</h1>
+    <h1>{{objeto.nombre}}</h1>
+    <ul>
+        {% for i in objeto.frase_set.all %}
+        <li> {{i.comentario}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
